@@ -59,7 +59,7 @@
 
 ```bash
 # 1. 克隆项目
-git clone <your-repo-url>
+git clone https://github.com/Andychenx/rag-qa-assistant.git
 cd rag-qa-assistant
 
 # 2. 安装依赖
