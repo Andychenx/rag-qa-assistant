@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+venv/
+.venv/
+env/
+
+# Vector database (runtime generated)
+chroma_db/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+data/temp/*
+*.tmp
+
+# Test reports
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Logs
+*.log

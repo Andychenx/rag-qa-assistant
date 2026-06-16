@@ -1,0 +1,39 @@
+# ============================================================================
+# 智能 RAG 问答助手 — 依赖清单
+# ============================================================================
+
+# ---- 文档解析 ----
+PyMuPDF>=1.24.0            # PDF 解析（快速文本提取）
+pdfplumber>=0.11.0         # PDF 解析（表格精确提取）
+python-docx>=1.1.0         # Word 文档 (.docx) 解析
+beautifulsoup4>=4.12.0     # HTML/XML 解析
+lxml>=5.1.0                # BeautifulSoup 解析器加速
+
+# ---- 文本分块 ----
+langchain-text-splitters>=0.3.0   # 多种文本分块策略
+tiktoken>=0.7.0            # Token 编码（Token 分块需要）
+
+# ---- 嵌入向量 ----
+# sentence-transformers>=3.0.0     # 本地嵌入模型（按需安装，模型约 500MB）
+
+# ---- 向量数据库 ----
+chromadb>=0.5.0            # 向量数据库
+
+# ---- LLM API ----
+openai>=1.30.0             # OpenAI API / 兼容 API
+
+# ---- 查询优化 ----
+jieba>=0.42.1              # 中文分词
+
+# ---- Web UI ----
+streamlit>=1.35.0          # Web 交互界面
+
+# ---- 工具库 ----
+requests>=2.31.0           # HTTP 请求
+python-dotenv>=1.0.0       # .env 文件加载
+
+# ---- 可选依赖（按需安装） ----
+# faiss-cpu>=1.8.0          # FAISS 向量检索（备选）
+# cohere>=5.0.0             # Cohere Rerank API
+# nltk>=3.9.0               # 自然语言处理（某些分词方案需要）
+# pypdf>=4.0.0              # 备用 PDF 解析器
